@@ -1,0 +1,36 @@
+.grid {
+    display: grid;
+    width: 50rem;
+    grid-template-columns: 80px 1fr;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
+    background-color: black;
+    padding: 2px;
+    gap: 2px;
+    text-align: center;
+}
+.grid section {
+    height: 20rem;
+    background-color: aquamarine;
+}
+.grid .ser01 {
+    background-color: orange;
+    height: 3rem;
+    grid-area: header;
+    font: bolder;
+
+}
+.grid .ser02 {
+    grid-template-columns: 80px;
+    grid-area: sidebar;
+    background-color: brown;
+}
+.grid .ser03 {
+    grid-template-columns: 1fr;
+    grid-area: main;
+    background-color: brown;
+}
+.grid .ser04 {
+    grid-area: footer;
+    height: 3rem;
+    background-color: blue;
+}
